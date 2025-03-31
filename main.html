@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1> Etch a sketch </h1>
+    <div class="planilla">
+    <div class="container"></div>
+    <div class="ordenarBody">
+    <div>
+        <h4> Cambio tamaño de grilla </h4>
+        <input type="text" id="InputTam" placeholder="Elije un tamaño de 0 a 100">
+        <button onclick="guardarTam()">Guardar</button>
+    </div>
+    <div class="main">
+        Result:<input type="text" id="box"
+            value="rgb(255,255,255)">
+        Red:<input type="range" id="red" 
+            value="255" min="0" max="255">
+        Green:<input type="range" id="green" 
+            value="255" min="0" max="255">
+        Blue:<input type="range" id="blue" 
+            value="255" min="0" max="255">
+    </div>
+    <button onclick="borrar()" id="borrar">Erase</button>
+    <!-- se debe presionar sí o sí el botón borrar -->
+     <!-- por algún motivo el tamaño no es muy adecuado de la grilla -->
+    </div>
+    </div>
+</body>
+</html>
